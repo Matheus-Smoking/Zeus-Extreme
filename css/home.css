@@ -1,0 +1,679 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+    font-family: Poppins;
+}
+
+.banner-hero img {
+    width: 100%;
+}
+
+.conteudo {
+    width: 960px;
+    margin: 0 auto;
+    clear: both;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 26px;
+    margin: 20px 0;
+}
+
+h2 strong {
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    margin-right: 11px;
+    padding: 2px 0;
+}
+
+.ofertas {
+   cursor: pointer;
+}
+
+.vitrine {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+
+.produtos {
+    border: 1.25775px solid #BDBDBD;
+    text-align: center;
+    border-radius: 12px;
+    padding: 20px 15px;
+    font-family: Poppins;
+    position: relative;
+}
+
+.produtos:hover {
+    border: 3px solid #94D660;
+}
+
+.produtos.active {
+    border: 3px solid #94D660;
+}
+
+.produtos h2 {
+    font-weight: bold;
+}
+
+p.unitario {
+    font-weight: bold;
+}
+
+.flag-shake {
+    margin-top: 8px;
+    color: #f00;
+    font-weight: 800;
+    display: block;
+}
+
+.descricao {
+    height: 101px;
+}
+
+.produtos p {
+    width: 239px;
+    margin: 0 auto;
+}
+
+.produtos h3 {
+    width: 121px;
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.produtos strong {
+    color: #ccc;
+    font-weight: 300;
+    text-decoration: line-through;
+    font-size: 20px;
+    display: block;
+    width: auto;
+    clear: both;
+    text-align: right;
+}
+
+.desconto {
+    position: absolute;
+    bottom: -26px;
+    width: 313px;
+    left: -11px;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.desconto p {
+    display: inline-block;
+    width: 112px;
+    background: #ffff00;
+    font-size: 43px;
+    padding: 0 17px 0 17px;
+    margin: 0;
+    font-weight: 900;
+}
+
+.desconto em {
+    background: #ffff00;
+    font-size: 26px;
+    padding-right: 13px;
+}
+
+.form-cadastro {
+    width: 60%;
+}
+
+.form-input {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ofertas h4 {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    background: #e4e4e4;
+    color: #999;
+    font-size: 19px;
+    border-radius: 0px 0px 17px 17px;
+    margin-top: 23px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p.clicado {
+    background: #94D660;
+    width: 100%;
+    margin-top: -12px;
+    padding-top: 26px;
+    color: #fff;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+    border-radius: 0px 0px 15px 18px;
+}
+
+input.input-big {
+    width: 269px;
+    margin-right: 14px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    padding-left: 7px;
+    padding: 12px;
+    margin-bottom: 7px;
+}
+
+input.input-little {
+    width: 175px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    margin: 5px 14px 3px 0;
+    height: 50px;
+    padding-left: 7px;
+}
+
+.endereco {
+    margin-top: 28px;
+}
+
+input:focus {
+    border: 2px solid #ccc;
+    outline: none;
+}
+
+.valores {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout {
+    width: 36%;
+}
+
+.resumo-compra {
+    background: #e4e4e4;
+    border-radius: 6px;
+    padding: 30px;
+}
+
+strong.preco-parcela {
+    float: right;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    margin-bottom: 0;
+}
+
+.frete {
+    border-bottom: 1px solid;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.frete strong {
+    float: right;
+}
+
+.como-pagar {
+    width: 60%;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: 900;
+    border-bottom: 1px solid #000;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.total strong {
+    float: right;
+    width: 73px;
+    text-align: right;
+}
+
+.info-frete {
+    text-align: center;
+    font-size: 11px;
+}
+
+input[type="submit"] {
+    border: none;
+    background: #BDBDBD;
+    width: 100%;
+    color: #fff;
+    border-radius: 7px;
+    padding: 15px 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input.enviar.active {
+    background: #94D660;
+}
+
+input#newslatter {
+    display: block;
+    padding: 11px;
+    -webkit-appearance: none;
+    background: #fff;
+    float: left;
+    border: 1px solid #ccc;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input#newslatter:checked {
+    background: url(../img/checked.png);
+    background-size: 100%;
+}
+
+.newsletter p {
+    font-size: 10.3px;
+    margin: 0;
+    padding-left: 13px;
+}
+
+.tabs {
+    width: 100%;
+    clear: both;
+    height: 36px;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+}
+
+.tab.tab-1 h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tab.tab-2 {
+    float: left;
+    width: 27%;
+    padding-top: 10px;
+    color: #999;
+}
+
+.tab.tab-2.active {
+    border: 1px solid #999;
+    color: #000;
+    border-radius: 10px 10px 0px 1px;
+    border-bottom: none;
+    height: 36px;
+    background: #fff;
+}
+
+.tab.tab-1 {
+    width: 30%;
+    float: left;
+    padding-top: 10px;
+    color: #999;
+}
+
+.tab-2 h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tab.tab-1.active {
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-radius: 0px 10px 0 0;
+    padding-top: 10px;
+    color: #000;
+    background: #fff;
+    height: 36px;
+}
+
+.formas-pagamento {
+    display: flex;
+    justify-content: space-between;
+}
+
+.segurança {
+    width: 36%;
+    margin-top: 31px;
+}
+
+.entrega {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.txt-entrega h3 {
+    font-size: 18px;
+    font-weight: 900;
+    padding-top: 6px;
+}
+
+.txt-entrega {
+    width: 81%;
+    font-size: 11px;
+}
+
+.seguranca {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.txt-seguranca {
+    width: 81%;
+    font-size: 11px;
+}
+
+.txt-seguranca h3 {
+    font-size: 18px;
+    font-weight: 900;
+    padding-top: 6px;
+}
+
+.atendimento {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.txt-atendimento {
+    width: 81%;
+    font-size: 11px;
+}
+
+.txt-atendimento h3 {
+    font-size: 18px;
+    font-weight: 900;
+    padding-top: 6px;
+}
+
+input.cart-big {
+    width: 100%;
+    padding: 17px 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+}
+
+input.cart-little {
+    padding: 17px 2px 17px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 9px;
+    font-size: 13px;
+    margin-right: 7px;
+}
+
+input.cart-little:nth-child(5) {
+    margin-right: 0;
+}
+
+select.cart-select {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 9px;
+    font-size: 13px;
+    padding: 17px 30px 17px 10px;
+    display: block;
+    height: 52px;
+    width: 186px;
+    color: #999;
+    float: left;
+}
+
+.cartao p {
+    float: left;
+    width: 56%;
+    padding: 15px;
+    font-size: 13px;
+}
+
+.boleto {
+    text-align: center;
+    font-size: 21px;
+    color: #000;
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.boleto img {
+    width: 120px;
+    margin-top: 26px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 920px) and (min-width: 550px) {
+    .vitrine {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 65px;
+    }
+    .desconto p {
+        font-size: 26px;
+    }
+    .ofertas {
+        width: 30%;
+    }
+    .produtos {
+        width: 100%;
+        padding: 0;
+        border-radius: 12px 12px 0 0;
+    }
+    .produtos p {
+        text-align: center;
+        width: 100%;
+    }
+    .produtos img {
+        width: 100%;
+    }
+    .produtos p {
+        font-size: 12px;
+    }
+    .ofertas h4 {
+        margin-top: 0;
+    }
+    .desconto {
+        position: initial;
+        left: 0;
+        right: 0;
+        display: block;
+        align-items: flex-end;
+        width: 100%;
+        margin-top: 23px;
+    }
+    .desconto em {
+        background: #ffff00;
+        font-size: 17px;
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+    }
+    .form-cadastro {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .form-input {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .valores {
+        flex-wrap: wrap;
+    }
+    input.input-big {
+        width: 49%;
+        margin: 4px 0;
+    }
+    input.input-little {
+        width: 49%;
+        margin: 7px 0;
+    }
+    .checkout-desk {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        width: 92%;
+        margin: 0 auto;
+    }
+    .formas-pagamento {
+        flex-wrap: wrap;
+    }
+    .como-pagar {
+        width: 92%;
+        margin: 0 auto;
+    }
+    input.cart-little {
+        width: 32%;
+    }
+    select.cart-select {
+        width: 100%;
+    }
+    .cartao p {
+        width: 100%;
+    }
+    .segurança {
+        width: 92%;
+        margin: 0 auto;
+        margin-top: 31px;
+    }
+}
+
+@media (max-width: 550px) {
+    .vitrine {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 65px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    h2 {
+        text-align: center;
+    }
+    .checkout {
+        width: 92%;
+        margin: 0 auto;
+    }
+    .checkout-desk {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .endereco {
+        width: 92%;
+        margin: 0 auto;
+    }
+    .valores {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .form-cadastro {
+        width: 100%;
+    }
+    .resumo-compra {
+        width: 100%;
+        background: #e4e4e4;
+        border-radius: 6px;
+        padding: 30px;
+    }
+    input.input-big {
+        width: 92%;
+        border-radius: 7px;
+        border: 1px solid #ccc;
+        margin: 0 auto;
+        margin-bottom: 8px;
+        padding: 11px 7px;
+    }
+    input.input-little {
+        width: 92%;
+        border-radius: 7px;
+        border: 1px solid #ccc;
+        height: 50px;
+        padding-left: 7px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .formas-pagamento {
+        flex-wrap: wrap;
+    }
+    .como-pagar {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .segurança {
+        width: 92%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .tabs {
+        width: 100%;
+        clear: both;
+        height: 55px;
+        border-bottom: 1px solid #999;
+    }
+    .tab.tab-1 {
+        width: 50%;
+        float: left;
+        padding-top: 20px;
+        color: #999;
+    }
+    .tab.tab-1.active {
+        border: 1px solid #999;
+        color: #000;
+        background: #fff;
+        height: 55px;
+        border-bottom: none;
+        border-radius: 8px 8px 0 0;
+        padding-top: 21px;
+    }
+    .tab.tab-2 {
+        float: left;
+        width: 50%;
+        padding-top: 20px;
+        color: #999;
+    }
+    .tab.tab-2.active {
+        border: 1px solid #999;
+        color: #000;
+        border-radius: 10px 10px 0px 1px;
+        border-bottom: none;
+        height: 55px;
+        background: #fff;
+    }
+    input.cart-little {
+        margin-right: 0;
+        width: 100%;
+    }
+}

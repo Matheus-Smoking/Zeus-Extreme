@@ -1,0 +1,221 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+    <meta name="description" content="Zeus , ideal para você">
+    <meta name="keywords" content="zeus,academia,musculação">
+    <meta name="author" content="Matheus Smoking">
+    <link rel="icon" type="image/icon" href="img/favicon.png" />
+    <title>Site Zeus</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="banner-hero">
+            <h1>
+               <img src="img/banner-hero.png" alt="zeus extreme">
+            </h1>
+        </section>
+        <section class="conteudo">
+            <h2> <strong>1</strong> SELECIONE SUA OFERTA</h2>
+            <div class="vitrine">
+                <div class="ofertas">
+                    <div class="produtos">
+                        <h2>3 unidades</h2>
+                        <p class="unitario">Cada um por R$ 99.67 </p>
+                        <img src="img/3-produtos.png" alt="produto 3unidades">
+                        <p class="descricao"> Três meses de Zeus Extreme, para ganhos máximos de massa muscular.<em class="flag-shake"> + SHAKER GRÁTIS </em></p>
+
+                        <h3>6x 54.99 </h3><strong>447.00</strong>
+                        <div class="desconto">
+                            <p>33% </p><em>de desconto!</em>
+                        </div>
+                    </div>
+                    <h4>Selecionar essa oferta!</h4>
+                </div>
+                <div class="ofertas">
+                    <div class="produtos">
+                        <h2>2 unidades</h2>
+                        <p class="unitario">cada um por R$107</p>
+                        <img src="img/2-produtos.png" alt="produto 2unidades">
+                        <p class="descricao">Dois meses de Zeus Extreme, para ganhos que crescer sem deixar de economizar!</p>
+                        <h3>6x 39.36 </h3><strong>298.00</strong>
+                        <div class="desconto">
+                            <p>28% </p><em>de desconto!</em>
+                        </div>
+                    </div>
+                    <h4>Selecionar essa oferta!</h4>
+                </div>
+                <div class="ofertas">
+                    <div class="produtos">
+                        <h2>1 unidade</h2>
+                        <p class="unitario">por R$124</p>
+                        <img src="img/1-produto.png" alt="produto 1unidade">
+                        <p class="descricao">Oferta inicial para quem deseja apenas experimentar</br> Zeus Extreme.</p>
+                        <h3>6x 22.81 </h3><strong>149.00</strong>
+                        <div class="desconto">
+                            <p>17%</p><em> de desconto!</em>
+                        </div>
+                    </div>
+                    <h4>Selecionar essa oferta!</h4>
+                </div>
+
+            </div>
+            <div class="valores">
+                <div class="form-cadastro">
+                    <h2><strong>2</strong>Onde devemos entregar?</h2>
+                    <form class="form-input" name="form1" action="enviar.php" method="post">
+
+                        <input class="input-big" name="nome" type="text" placeholder="Nome">
+
+                        <input class="input-big" name="sobrenome" type="text" placeholder="Sobrenome">
+
+                        <input class="input-little" name="email" type="text" placeholder="Email">
+
+                        <input class="input-little" onkeypress='return Numero(event)' name="tel" type="text" placeholder="Telefone com DDD">
+
+                        <input class="input-little" name="sexo" type="text" placeholder="Sexo">
+
+                        <input class="input-little" onkeypress='return Numero(event)' name="nascimento" type="text" placeholder="Nascimento">
+
+                        <input class="input-little" onkeypress='return Numero(event)' name="cpf" type="text" placeholder="Cpf">
+
+                        <input class="input-little" onkeypress='return Numero(event)' name="cep" type="text" placeholder="Cep">
+
+                        <p class="endereco">R. Luís Anhaia - Alto de Pinheiros, São Paulo - SP, 05433-020</p>
+
+                        <input class="input-little" onkeypress='return Numero(event)' name="numero" type="text" placeholder="Numero">
+
+                        <input class="input-little" onkeypress='return Numero(event)' name="complemento" type="text" placeholder="complemento">
+
+                    </form>
+                </div>
+
+                <div class="checkout checkout-desk">
+                    <h2><strong>4</strong>RESUMO DA COMPRA</h2>
+                    <div class="resumo-compra">
+
+                        <p class="subtotal">
+                            Subtotal:<strong class="preco-parcela"></strong>
+                        </p>
+                        <p class="frete">
+                            Frete (Expresso):<strong>6x de R$2.48</strong>
+                        </p>
+                        <p class="total">
+                            Total:<strong></strong>
+                        </p>
+                        <p class="info-frete">*Valor total da compra com frete. Pagamentos parcelados: juros 1,99% a.m.</p>
+                        <input type="submit" class="enviar" value="PREENCHA TODOS OS CAMPOS" onclick="return validar()">
+                        <div class="newsletter">
+                            <input type="checkbox" name="news" value="newslatter" id="newslatter">
+                            <p>Desejo receber gratuitamente por email novas ofertas, notícias e dicas da Iridium Labs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formas-pagamento">
+                <div class="como-pagar">
+                    <h2><strong>3</strong>Como prefere pagar?</h2>
+                    <div class="tabs">
+
+                        <div class="tab tab-1 active">
+                            <h3>Cartão de crédito</h3></div>
+                        <div class="tab tab-2">
+                            <h3>Boleto bancário</h3></div>
+
+                    </div>
+                    <div class="cartao">
+
+                        <form class="form-input" name="form2" action="enviar.php" method="post">
+                            <input class="cart-big" onkeypress='return Numero(event)' name="cartao" type="text" placeholder="Numero do cartão">
+                            <input class="cart-big" name="titulo" type="text" placeholder="Nome do Titular (Como esta gravado no cartão)">
+                            <input class="cart-little" onkeypress='return Numero(event)' name="mes" type="text" placeholder="Valido até mês">
+                            <input class="cart-little" onkeypress='return Numero(event)' name="ano" type="text" placeholder="Valido até ano">
+                            <input class="cart-little" onkeypress='return Numero(event)' name="cvv" type="text" placeholder="CVV">
+
+                            <select class="cart-select">
+                                <option value="">Parcelamento</option>
+                                <option value="1">1x</option>
+                                <option value="2">2x</option>
+                                <option value="3">3x</option>
+                                <option value="4">4x</option>
+                                <option value="5">5x</option>
+                                <option value="6">6x</option>
+                            </select>
+
+                            <p>Valor total de Compra com frete. Pagamentos parcelados: juros 1,99% a.m</p>
+                        </form>
+
+                    </div>
+                    <div class="boleto">
+                        <p class="boleto">Clique e imprima o seu boleto agora mesmo!</p>
+                        <a href="boleto-zeus.pdf" download> <img src="img/boleto.png" /> </a>
+                    </div>
+                </div>
+
+                <div class="checkout mobile">
+                    <h2><strong>4</strong>RESUMO DA COMPRA</h2>
+                    <div class="resumo-compra">
+
+                        <p class="subtotal">
+                            Subtotal:<strong class="preco-parcela"></strong>
+                        </p>
+                        <p class="frete">
+                            Frete (Expresso):<strong>6x de R$2.48</strong>
+                        </p>
+                        <p class="total">
+                            Total:<strong></strong>
+                        </p>
+                        <p class="info-frete">*Valor total da compra com frete. Pagamentos parcelados: juros 1,99% a.m.</p>
+                        <input type="submit" class="enviar" value="PREENCHA TODOS OS CAMPOS" onclick="return validar()">
+                        <div class="newsletter">
+                            <input type="checkbox" name="news" value="newslatter" id="newslatter">
+                            <p>Desejo receber gratuitamente por email novas ofertas, notícias e dicas da Iridium Labs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <article class="segurança">
+
+                    <div class="entrega">
+                        <img src="img/entrega.png" alt="entrega">
+
+                        <div class="txt-entrega">
+                            <h3> Entrega Rápida e Segura</h3>
+                            <p> Você receberá o código de rastreio de sua entrega por e-mail e pode consultar a situação do seu a qualquer momento na página inicial.</p>
+                        </div>
+                    </div>
+
+                    <div class="seguranca">
+                        <img src="img/seguranca.png" alt="segurança">
+                        <div class="txt-seguranca">
+                            <h3> Compra 100% segura</h3>
+                            <p> Seus dados são encriptados, seus dados pessoais são sigilosos e protegidos por sistema anti-fraude de padrão internacional.</p>
+                        </div>
+                    </div>
+
+                    <div class="atendimento">
+                        <img src="img/atendimento.png">
+                        <div class="txt-atendimento">
+                            <h3> Atendimento ao consumidor</h3>
+                            <p> seja antes ou depois da compra, você pode contar com nossos atendentes para resolver suas dúvidas sobre o produto. </p>
+                            <p><strong>SAC:</strong> 3003 0751 para capitais e regiões metropolitanas (segunda à sexta, exceto feriados, das 08:00 às 17:00 - Horário de Brasília)</p>
+                            <p><strong>Email: </strong>sac@iridiumlabs.com.br</p>
+                        </div>
+                    </div>
+                </article>
+
+        </section>
+    </main>
+
+    <script src="Js/home.js"></script>
+
+</body>
+
+</html>
