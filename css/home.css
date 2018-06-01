@@ -478,9 +478,6 @@ select.cart-select {
         justify-content: space-between;
         margin-bottom: 65px;
     }
-    .desconto p {
-        font-size: 26px;
-    }
     .ofertas {
         width: 30%;
     }
@@ -498,6 +495,9 @@ select.cart-select {
     }
     .produtos p {
         font-size: 12px;
+    }
+    .desconto p {
+        font-size: 26px;
     }
     .ofertas h4 {
         margin-top: 0;
