@@ -79,6 +79,29 @@ function PriceChange() {
             document.querySelector(".total strong").innerHTML = ' ' + parcelas + ' ' + valor_total;
         });
     }
+    
+    // preço no mobile
+    for (var i = 0; i < idx; i++) {
+        document.querySelectorAll(".produtos")[i].addEventListener("click", function() {
+            var price = this.querySelector(".produtos h3").innerHTML;
+            document.querySelector("#checkout-mobile .preco-parcela").innerHTML = price;
+
+            // Parcelas
+            var parcelas = "6x de R$";
+
+            // Frete
+            var frete = 2.48;
+
+            // Preço
+            var numPrice = Number(price.replace("6x", ""));
+
+            // Preço total
+            var valor_total = (numPrice + frete).toFixed(2);
+
+            // Renderiza produto
+            document.querySelector("#checkout-mobile .total strong").innerHTML = ' ' + parcelas + ' ' + valor_total;
+        });
+    }
 
     // Ofertas
     $('.ofertas').click(function() {
